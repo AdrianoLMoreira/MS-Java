@@ -8,7 +8,7 @@ class HrWorkerApplicationTests {
 
     @Test
     void contextLoads() {
-        //TESTES
+        System.out.println("Teste concluido");
     }
 
 }
