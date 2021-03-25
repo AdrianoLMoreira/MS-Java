@@ -25,5 +25,3 @@ H
 ms-eureka-server/pom.xml,b\a\ba358c0d76241a73048d5cd04af1b0028f81f3aa
 u
 Ehr-payroll/src/main/java/com/cursodev/hrpayroll/config/AppConfig.java,2\f\2f365e4c79f04807e1e72ce5d2e38a22235b331d
-<
-demo/pom.xml,f\1\f1bf400bc0784549511ea07030d3a798eb8c0511
