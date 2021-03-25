@@ -8,8 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hr-payroll" />
-        <module name="hr-worker" />
         <module name="ms-eureka-server" />
+        <module name="hr-worker" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

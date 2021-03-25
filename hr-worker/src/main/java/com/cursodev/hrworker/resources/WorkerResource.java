@@ -2,8 +2,8 @@ package com.cursodev.hrworker.resources;
 
 import com.cursodev.hrworker.entities.Worker;
 import com.cursodev.hrworker.repositories.WorkerRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +19,7 @@ import java.util.Optional;
 @RequestMapping(value = "/workers")
 public class WorkerResource {
 
-    private static Logger logger = LoggerFactory.getLogger(WorkerResource.class);
+    //private static Logger logger = LoggerFactory.getLogger(WorkerResource.class);
 
     @Autowired
     private Environment environment;
@@ -35,7 +35,6 @@ public class WorkerResource {
 
     @GetMapping(value = "/{id}")
     public ResponseEntity<Worker> findById(@PathVariable Long id) {
-        logger.info("PORT = " +environment.getProperty("local.server.port"));
         Optional<Worker> worker = workRepo.findById(id);
         if (worker.isPresent())
             return ResponseEntity.ok(worker.get());

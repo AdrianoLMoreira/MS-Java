@@ -19,3 +19,11 @@ B
 hr-payroll/pom.xml,c\2\c2876b45d187d8cb7f68f334d254c9498362c0aa
 A
 hr-worker/pom.xml,b\c\bc40554fef381eccc7d70563dce5f3cba6f79f2c
+„
+Tms-eureka-server/src/main/java/com/msalm/eurekaserver/MsEurekaServerApplication.java,d\0\d0b9207cffd10efb11b98811af4c74f9b1ececae
+H
+ms-eureka-server/pom.xml,b\a\ba358c0d76241a73048d5cd04af1b0028f81f3aa
+u
+Ehr-payroll/src/main/java/com/cursodev/hrpayroll/config/AppConfig.java,2\f\2f365e4c79f04807e1e72ce5d2e38a22235b331d
+<
+demo/pom.xml,f\1\f1bf400bc0784549511ea07030d3a798eb8c0511
