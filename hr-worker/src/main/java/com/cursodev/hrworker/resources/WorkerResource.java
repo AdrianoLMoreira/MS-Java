@@ -2,9 +2,10 @@ package com.cursodev.hrworker.resources;
 
 import com.cursodev.hrworker.entities.Worker;
 import com.cursodev.hrworker.repositories.WorkerRepository;
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +20,10 @@ import java.util.Optional;
 @RequestMapping(value = "/workers")
 public class WorkerResource {
 
-    //private static Logger logger = LoggerFactory.getLogger(WorkerResource.class);
+    private final static Logger logger = LoggerFactory.getLogger(WorkerResource.class);
+
+    @Value ("${test.config}")
+    private String testConfig;
 
     @Autowired
     private Environment environment;
@@ -40,5 +44,11 @@ public class WorkerResource {
             return ResponseEntity.ok(worker.get());
         else
             return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping(value = "/configs")
+    public ResponseEntity<Void> getConfigs() {
+        logger.info("Configs hr-worker: " +testConfig);
+        return ResponseEntity.noContent().build();
     }
 }
